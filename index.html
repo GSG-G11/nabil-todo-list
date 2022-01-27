@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h5>TO-DO LIST</h5>
+    </header>
+    <section class="slogan">
+      <h1>MANAGE YOUR TIME!</h1>
+      <img src="assets\calendar.png" alt="calendar" />
+    </section>
+    <form id="input">
+      <div class="inputs-container">
+        <div class="todo-field">
+          <p class="p-text">Task:</p>
+          <input
+            type="text"
+            id="main-input"
+            placeholder="Enter your todos..."
+          />
+        </div>
+        <div class="time-field">
+          <p class="p-text">Start at:</p>
+          <input type="time" value="20:00" id="my-time" />
+        </div>
+      </div>
+      <input type="submit" id="list-item" value="ADD TASK" />
+    </form>
+    <section id="container">
+    
+    </section>
+    <footer>
+      <div>
+        <p class="counter">counter:</p>
+        <p id="counter" class="coloring">0</p>
+      </div>
+      <input type="button" value="Reset All" id="reset" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
